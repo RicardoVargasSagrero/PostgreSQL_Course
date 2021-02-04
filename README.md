@@ -1,6 +1,7 @@
 # Curso de PostgreSQL 
 Este documento contiene información con respecto a los comandos principales de PostgreSQL
-
+# Instalación 
+https://www.tecmint.com/install-postgresql-and-pgadmin-in-ubuntu/
 ## Comandos
 ### De ayuda
 * **\\?:** con el cual podemos ver la lista de todos los comandos disponibles en consola, comandos que empiezan con backslash 
@@ -333,3 +334,17 @@ SELECT levenshtein('oswaldo','osvaldo');
 
 SELECT difference ('beard','bird');
 ```
+
+## Mantenimiento
+* Vacuum: La más importante, con tres opciones, Vacuum, Freeze y Analyze.
+* Full: la tabla quedará limpia en su totalidad
+* Freeze: durante el proceso la tabla se congela y no permite modificaciones hasta que no termina la limpieza
+* Analyze: solo revisa la tabla
+
+* Analyze: No hace cambios en la tabla. Solo hace una revisión y la muestra.
+
+* Reindex: Aplica para tablas con numerosos registros con indices, como por ejemplo las llaves primarias.
+
+* Cluster: Especificamos al motor de base de datos que reorganice la información en el disco.
+
+https://www.postgresql.org/docs/9.0/maintenance.html
